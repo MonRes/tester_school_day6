@@ -34,3 +34,22 @@ def randomize(text):
         else:
             chars.append(char.lower())
     return ''.join(chars)
+
+
+def numberize (text):
+    """Returnes numberized string.
+
+    Args:
+        text: text to numberized
+    Return:
+        numberized text
+    """
+    chars = []
+    for idx, char in enumerate(text):
+        if char == '3':
+            chars.append('!')
+        elif char == '2':
+            chars.append('@')
+        else:
+            chars.append(char)
+    return ''.join(chars)
